@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_QpB9sFn2EeSSVvOTqLOJpw" elementId="org.eclipse.e4.ide.application" bindingContexts="_QpCkyFn2EeSSVvOTqLOJpw">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_QpCkwFn2EeSSVvOTqLOJpw" label="Breeze Groundstation" width="800" height="600">
+    <tags>shellMaximized</tags>
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_QpEZ9Vn2EeSSVvOTqLOJpw">
+      <children xsi:type="advanced:Perspective" xmi:id="_QpFBAFn2EeSSVvOTqLOJpw">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_QpFBAVn2EeSSVvOTqLOJpw" elementId="breeze.groundstation.partsashcontainer.left" containerData="3000">
+          <children xsi:type="basic:PartStack" xmi:id="_QpFBAln2EeSSVvOTqLOJpw" selectedElement="_QpFBA1n2EeSSVvOTqLOJpw">
+            <children xsi:type="basic:Part" xmi:id="_QpFBA1n2EeSSVvOTqLOJpw" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.parts.ControlFlightPart" label="Control Flight"/>
+            <children xsi:type="basic:Part" xmi:id="_oVdBEICVEeSsSJtCkTtOMw" elementId="breeze.groundstation.part.configuration" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.parts.ConfigurationPart" label="Configuration"/>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Hf1vIFn3EeSSVvOTqLOJpw" elementId="breeze.groundstation.partsashcontainer.Right" containerData="7000">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_vh3EUFn8EeSSVvOTqLOJpw" elementId="breeze.groundstation.partsashcontainer.MapAndTimeline" containerData="9000" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_JKONUFn3EeSSVvOTqLOJpw" elementId="breeze.groundstation.partstack.0">
+              <children xsi:type="basic:Part" xmi:id="_9chzQGdAEeStWaBgv07VwQ" elementId="breeze.groundstation.part.mapVectorized" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.parts.MapVectorizedPart" label="Map vectorized"/>
+              <children xsi:type="basic:Part" xmi:id="_KOFeEFn3EeSSVvOTqLOJpw" elementId="breeze.groundstation.part.map" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.parts.PlaygroundPart" label="Map"/>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_6MI1sFn8EeSSVvOTqLOJpw" elementId="breeze.groundstation.partsashcontainer.1" containerData="1000" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_CG5FwFn9EeSSVvOTqLOJpw" elementId="breeze.groundstation.partstack.1">
+              <children xsi:type="basic:Part" xmi:id="_ClDBYFn9EeSSVvOTqLOJpw" elementId="breeze.groundstation.part.Timeline" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.parts.MissionManagerPart" label="Mission"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <trimBars xmi:id="_QpFoEFn2EeSSVvOTqLOJpw" side="Bottom">
+      <children xsi:type="menu:ToolBar" xmi:id="_QpFoEVn2EeSSVvOTqLOJpw" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_QpFoEln2EeSSVvOTqLOJpw" iconURI="platform:/plugin/breeze.groundstation/icons/sample.png" command="_QpDL1Fn2EeSSVvOTqLOJpw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_QpFoE1n2EeSSVvOTqLOJpw" iconURI="platform:/plugin/breeze.groundstation/icons/save_edit.png" command="_QpDL11n2EeSSVvOTqLOJpw"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_QpDL0Vn2EeSSVvOTqLOJpw" elementId="breeze.groundstation.handler.quitCommand" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.handlers.QuitHandler" command="_QpDL0Fn2EeSSVvOTqLOJpw"/>
+  <handlers xmi:id="_QpDL1Vn2EeSSVvOTqLOJpw" elementId="breeze.groundstation.handler.openCommand" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.handlers.OpenHandler" command="_QpDL1Fn2EeSSVvOTqLOJpw"/>
+  <handlers xmi:id="_QpDL2Fn2EeSSVvOTqLOJpw" elementId="breeze.groundstation.handler.saveCommand" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.handlers.SaveHandler" command="_QpDL11n2EeSSVvOTqLOJpw"/>
+  <handlers xmi:id="_QpDL21n2EeSSVvOTqLOJpw" elementId="breeze.groundstation.handler.aboutCommand" contributionURI="bundleclass://breeze.groundstation/breeze.groundstation.handlers.AboutHandler" command="_QpDL2ln2EeSSVvOTqLOJpw"/>
+  <bindingTables xmi:id="_QpDL0ln2EeSSVvOTqLOJpw" bindingContext="_QpCkyFn2EeSSVvOTqLOJpw">
+    <bindings xmi:id="_QpDL01n2EeSSVvOTqLOJpw" keySequence="M1+Q" command="_QpDL0Fn2EeSSVvOTqLOJpw"/>
+    <bindings xmi:id="_QpDL1ln2EeSSVvOTqLOJpw" keySequence="M1+O" command="_QpDL1Fn2EeSSVvOTqLOJpw"/>
+    <bindings xmi:id="_QpDL2Vn2EeSSVvOTqLOJpw" keySequence="M1+S" command="_QpDL11n2EeSSVvOTqLOJpw"/>
+    <bindings xmi:id="_QpDy4Fn2EeSSVvOTqLOJpw" keySequence="M1+A" command="_QpDL2ln2EeSSVvOTqLOJpw"/>
+  </bindingTables>
+  <rootContext xmi:id="_QpCkyFn2EeSSVvOTqLOJpw" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_QpCkyVn2EeSSVvOTqLOJpw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_QpCkyln2EeSSVvOTqLOJpw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_QpDL0Fn2EeSSVvOTqLOJpw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_QpDL1Fn2EeSSVvOTqLOJpw" elementId="breeze.groundstation.open" commandName="openCommand"/>
+  <commands xmi:id="_QpDL11n2EeSSVvOTqLOJpw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_QpDL2ln2EeSSVvOTqLOJpw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_QpCkwVn2EeSSVvOTqLOJpw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_QpCkwln2EeSSVvOTqLOJpw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_QpCkw1n2EeSSVvOTqLOJpw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_QpCkxFn2EeSSVvOTqLOJpw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_QpCkxVn2EeSSVvOTqLOJpw" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_QpCkxln2EeSSVvOTqLOJpw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_QpCkx1n2EeSSVvOTqLOJpw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

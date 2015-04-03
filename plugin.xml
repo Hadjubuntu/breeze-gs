@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="breeze.groundstation"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/breeze.groundstation/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="breeze.groundstation">
+         </property>
+          <property
+           name="lifeCycleURI"
+           value="bundleclass://breeze.groundstation/breeze.groundstation.main.LifeCycle">
+    	 </property>
+      </product>
+   </extension>
+
+</plugin>
